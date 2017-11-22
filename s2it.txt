@@ -1,0 +1,47 @@
+1-a
+2-a
+3-c
+4-c
+5-a
+6-E
+7-e
+
+8-
+
+String a;
+String b;
+string c;
+
+a = "13";
+b = "24";
+
+if (tamanhoDe(a) < 2) ou (tamanhoDe(b)  < 2)
+ exit;
+
+c = copiar(a, 1, 1) + copiar (b, 1, 1);
+
+if (tamanhoDe(a) > 1)
+ c = c + copiar(a, 1, 2); 
+
+if (tamanhoDe(b) > 1 ) 
+ c = c + copiar(b, 1, 2); 
+
+int tamanhoA = tamanhoDe(a);
+int TamanhoB = tamanhoDe(b);
+
+if (tamanhoA > tamanhoB)
+ c = c + copiar(a, tamanhoA + 2, tamanhoA - 2); 
+ else if (tamanhoB > tamanhoA)
+ c = c + copiar(b, tamanhoB + 2, tamanhoB - 2); 
+
+if (stringParaInt(c) > 1000000)
+ return -1;
+ 
+//return stringParaInt(c);
+// 1501 2 256   
+ 
+9- Não conheço BinaryTree. Estuarei: http://math.hws.edu/javanotes/c9/s4.html
+
+
+
+
